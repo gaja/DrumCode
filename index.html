@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="style/main.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/modernizr-2.6.2.js"></script>
+    <script type="text/javascript">
+        if (typeof (jQuery) == 'undefined')
+            document.write(unescape("%3Cscript src='Scripts/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/3.jpg" alt="click to see suprise!"/>
+    </header>
+    <article class="article">
+        <div id="menu">
+        <a href="#">Home</a>  |  <a href="contact.html">Contact</a>
+        </div>
+    </article>
+    <aside class="aside">
+        
+    </aside>
+    <footer class="footer">
+        
+    </footer>
+    <script>
+        $(document).ready(function () {
+            $("a").click(function (event) {
+                alert("You have clicked Marin's link!");
+                event.preventDefault();       //for preventing browser default behaviour
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿* {
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+}
+
+body 
+{
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    border: 0px;
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: green;
+    display: inline;
+}
+
+a:hover {
+    text-decoration: line-through;
+    color: greenyellow;
+}
+
+article {
+    width: 800px;
+    background-color: rgba(255, 0, 0, 0.03);
+}
+
+aside {
+    width: 185px;
+    background-color: rgba(255, 0, 0, 0.03);
+}
+
+#menu {
+    margin: 0 auto;
+    text-align: center;
+}
