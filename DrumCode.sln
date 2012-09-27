@@ -22,7 +22,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "DrumCode", ".", "{27AA5C7F-
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "2777"
+		VWDPort = "1080"
 	EndProjectSection
 	ProjectSection(SvnOrigin) = preProject
 		@Keys = Enlist

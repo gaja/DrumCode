@@ -8,11 +8,38 @@
         if (typeof (jQuery) == 'undefined')
             document.write(unescape("%3Cscript src='Scripts/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
     </script>
+    <script src="Scripts/ie6.js" type="text/javascript"></script>
+    <script type="text/javascript">var _siteRoot = 'index.html', _root = 'index.html';</script>
+    <script src="Scripts/scripts.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="images/3.jpg" alt="click to see suprise!"/></a>
+        <div class="wrap">
+            <div id="slide-holder">
+                <div id="slide-runner">
+                    <a href=""><img id="slide-img-1" src="images/1250888935_45_wide.jpg" class="slide" alt="" /></a>
+                    <a href=""><img id="slide-img-2" src="images/1264973744_31_wide.jpg" class="slide" alt="" /></a>
+                    <a href=""><img id="slide-img-3" src="images/1303924965_33_wide.jpg" class="slide" alt="" /></a>
+                    <a href=""><img id="slide-img-4" src="images/3.jpg" class="slide" alt="" /></a>
+                    <a href=""><img id="slide-img-5" src="images/banner_music_drums.jpg" class="slide" alt="" /></a>
+                    <a href=""><img id="slide-img-6" src="images/DRUMS.jpg" class="slide" alt="" /></a>
+                    <a href=""><img id="slide-img-7" src="images/Drums1.jpg" class="slide" alt="" /></a> 
+                    <div id="slide-controls">
+                        <p id="slide-client" class="text"><strong>post: </strong><span></span></p>
+                        <p id="slide-desc" class="text"></p>
+                        <p id="slide-nav"></p>
+                    </div>
+                </div>
+	
+                <!--content featured gallery here -->
+            </div>
+            <script type="text/javascript">
+                if (!window.slider) var slider = {}; slider.data = [{ "id": "slide-img-1", "client": "Marin 'z' guza.", "desc": "Marin pokušava nešto da bubnja, ali ne ide baš; barem bubnjevi odlično zvuče :P" }, { "id": "slide-img-2", "client": "Maro kao crnjo.", "desc": "Kak bi se reklo: 'Finally i got the rhythm'" }, { "id": "slide-img-3", "client": "Maro sa boka.", "desc": "Paola(njegova cura) kaže da je ipak najjakši sa boka :)" }, { "id": "slide-img-4", "client": "Marin se napokon zaljubio.", "desc": "Marin više ni ne zna kaj svira, samo gleda bass player-a" }, { "id": "slide-img-5", "client": "Oprema na stage-u", "desc": "Ma još bolje izgledaju u živo, a zvuk, da zvuk..." }, { "id": "slide-img-6", "client": "Priznanje", "desc": "Priznajte da je ovo fuckin porn!" }, { "id": "slide-img-7", "client": "Marinovi čvapčići.", "desc": "Marin ide svirati nakon 1l rakije."}];
+            </script>
+        </div>
     </header>
+    
+    <!--/top-->
     <article class="article">
         <div id="menu">
             <a href="#" id="menuNavHome">Home</a>  |  <a id="menuNavContact">Contact</a>
@@ -23,15 +50,19 @@
         </div>
     </article>
     <aside class="aside">
-        <ul>
+        <div id="sideMenu">
+        Menu:
+        </div>
+            <ul>
             
-            <li><a href="#">Pearl</a></li>
-            <li><a href="#">Sabian</a></li>
-            <li><a href="#">Gretch</a></li>
-            <li><a href="#">Remo</a></li>
-            <li><a href="#">Zildjian</a></li>
+                <li><a href="#">Pearl</a></li>
+                <li><a href="#">Sabian</a></li>
+                <li><a href="#">Gretch</a></li>
+                <li><a href="#">Remo</a></li>
+                <li><a href="#">Zildjian</a></li>
 
-        </ul>
+            </ul>
+        
     </aside>
     <footer class="footer">
         If you wanna cool w-site like this one please contact me at 
@@ -55,6 +86,11 @@
                 $("#content").html("Some contact info: <br /> tel: 0997207837<br />e-mail: <a src='mailto:marinmadunic@gmail.com'>mail</a>");
             });
 
+            //toggle menu
+            $("#sideMenu").click(function () { $("ul").toggle("slow"); });
+
+            //move menu
+            $("#sideMenu").draggable();
         });
     </script>
 </body>
