@@ -11,6 +11,7 @@
     <script src="Scripts/ie6.js" type="text/javascript"></script>
     <script type="text/javascript">var _siteRoot = 'index.html', _root = 'index.html';</script>
     <script src="Scripts/scripts.js" type="text/javascript"></script>
+    <script src="Scripts/jquery-ui-1.8.23.custom.min.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -49,7 +50,7 @@
             Najbolji bubnjevi ikada napravljeni na zemlji. Postoji i osnovana sumlja da su izrađeni vanzemaljskim tehnikama i tehnologijom. Tako dobro da ti odzvanja u ušima još barem tjedan dana. 
         </div>
     </article>
-    <aside class="aside">
+    <aside>
         <div id="sideMenu">
         Menu:
         </div>
@@ -90,7 +91,7 @@
             $("#sideMenu").click(function () { $("ul").toggle("slow"); });
 
             //move menu
-            $("#sideMenu").draggable();
+            $("aside").draggable();
         });
     </script>
 </body>
