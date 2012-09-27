@@ -55,11 +55,16 @@ article {
 
 #content {
     font-family: TopSecretBold, Helvetica, Arial, sans-serif;
+    
 }
 
 aside {
-    width: 185px;
-    background-color: rgba(255, 0, 0, 0.03);
+    width: 155px;
+    background-color: rgba(255, 0, 0, 0.3);
+    top: -190px;
+    position: relative;
+    float: right;
+    
 }
 
 #menu {
