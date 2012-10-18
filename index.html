@@ -2,8 +2,9 @@
 <html>
 <head>
     <title></title>
+    <link href="style/normalize.css" rel="stylesheet" type="text/css" />
     <link href="style/main.css" rel="stylesheet" type="text/css" />
-    <script src="Scripts/modernizr-2.6.2.js"></script>
+    <script src="Scripts/modernizr-2.6.2.js" type="text/javascript"></script>
     <script type="text/javascript">
         if (typeof (jQuery) == 'undefined')
             document.write(unescape("%3Cscript src='Scripts/jquery-1.8.2.min.js' type='text/javascript'%3E%3C/script%3E"));
@@ -18,13 +19,13 @@
         <div class="wrap">
             <div id="slide-holder">
                 <div id="slide-runner">
-                    <a href=""><img id="slide-img-1" src="images/1250888935_45_wide.jpg" class="slide" alt="" /></a>
-                    <a href=""><img id="slide-img-2" src="images/1264973744_31_wide.jpg" class="slide" alt="" /></a>
-                    <a href=""><img id="slide-img-3" src="images/1303924965_33_wide.jpg" class="slide" alt="" /></a>
-                    <a href=""><img id="slide-img-4" src="images/3.jpg" class="slide" alt="" /></a>
-                    <a href=""><img id="slide-img-5" src="images/banner_music_drums.jpg" class="slide" alt="" /></a>
-                    <a href=""><img id="slide-img-6" src="images/DRUMS.jpg" class="slide" alt="" /></a>
-                    <a href=""><img id="slide-img-7" src="images/Drums1.jpg" class="slide" alt="" /></a> 
+                    <a href=""><img id="slide-img-1" src="images/1250888935_45_wide.jpg" class="slide" alt=":)" /></a>
+                    <a href=""><img id="slide-img-2" src="images/1264973744_31_wide.jpg" class="slide" alt=":)" /></a>
+                    <a href=""><img id="slide-img-3" src="images/1303924965_33_wide.jpg" class="slide" alt=":)" /></a>
+                    <a href=""><img id="slide-img-4" src="images/3.jpg" class="slide" alt=":)" /></a>
+                    <a href=""><img id="slide-img-5" src="images/banner_music_drums.jpg" class="slide" alt=":)" /></a>
+                    <a href=""><img id="slide-img-6" src="images/DRUMS.jpg" class="slide" alt=":)" /></a>
+                    <a href=""><img id="slide-img-7" src="images/Drums1.jpg" class="slide" alt=":)" /></a> 
                     <div id="slide-controls">
                         <p id="slide-client" class="text"><strong>post: </strong><span></span></p>
                         <p id="slide-desc" class="text"></p>
@@ -43,7 +44,7 @@
     <!--/top-->
     <article>
         <div id="menu">
-            <a href="#" id="menuNavHome">Home</a>  |  <a id="menuNavContact">Contact</a>
+            <a href="#" id="menuNavHome">Home</a>  |  <a href="#" id="menuNavContact">Contact</a> | <a href="#" id="menuNavGallery">Gallery</a>
         </div>
         <div id="content">
             The best handmade drums on planet Earth. There is a reasonoble doubt that the drums are made by alien technic and technology. It sounds so good that you will feel sound bangin in your ears for a weeks :) <hr />
@@ -56,18 +57,18 @@
         </div>
             <ul>
             
-                <li><a href="#">Pearl</a></li>
-                <li><a href="#">Sabian</a></li>
-                <li><a href="#">Gretch</a></li>
-                <li><a href="#">Remo</a></li>
-                <li><a href="#">Zildjian</a></li>
+                <li><a id="pearl" href="#">Pearl</a></li>
+                <li><a id="sabian" href="#">Sabian</a></li>
+                <li><a id="gretch" href="#">Gretch</a></li>
+                <li><a id="remo" href="#">Remo</a></li>
+                <li><a id="zildjian" href="#">Zildjian</a></li>
 
             </ul>
         
     </aside>
-    <footer class="footer">
+    <footer>
         If you wanna cool w-site like this one please contact me at 
-        <a href="mailto:oldirtydev@gmail.com">Ol' Dirty Developer</a> mail. Thanks!<br /><br />
+        <a href="mailto:oldirtydev@gmail.com" class="footerLink">Ol' Dirty Developer</a> mail. Thanks!<br /><br />
         <audio src="audio/[06] Danzig - Mother.mp3" controls loop>
             Your Web Browser Does't Support the Audio HTML5 element. Sorry!
         </audio>
@@ -81,10 +82,34 @@
 
             //menu on fly
             $("#menuNavHome").click(function () {
-                $("#content").html("Najbolji bubnjevi ikada napravljeni na zemlji. Postoji i osnovana sumlja da su izrađeni vanzemaljskim tehnikama i tehnologijom. Tako dobro da ti odzvanja u ušima još barem tjedan dana. ");
+                $("#content").html("The best handmade drums on planet Earth. There is a reasonoble doubt that the drums are made by alien technic and technology. It sounds so good that you will feel sound bangin in your ears for a weeks :) <hr />Najbolji bubnjevi ikada napravljeni na zemlji. Postoji i osnovana sumlja da su izrađeni vanzemaljskim tehnikama i tehnologijom. Tako dobro da ti odzvanja u ušima još barem tjedan dana. ");
             });
             $("#menuNavContact").click(function () {
-                $("#content").html("Some contact info: <br /> tel: 0997207837<br />e-mail: <a src='mailto:marinmadunic@gmail.com'>mail</a>");
+                $("#content").html("Some contact info: <br /> tel: 0997207837<br />e-mail: <a href='mailto:marinmadunic@gmail.com'>mail</a><hr /><img src='images/2bnudfnv.bmp' />");
+            });
+            $("#menuNavGallery").click(function () {
+                $("#content").load("testPage.html");
+            });
+
+            //aside menu navigation
+            $("#pearl").click(function () {
+                $("#content").html("Pearl. It's like drumin on your fathers face man ;)");
+            });
+
+            $("#sabian").click(function () {
+                $("#content").html("It's like sabine the vampire cock sucker ;)");
+            });
+
+            $("#gretch").click(function () {
+                $("#content").html("It's like stolin christmas from niggaz ;)");
+            });
+
+            $("#remo").click(function () {
+                $("#content").html("It's like gay sound of future ;)");
+            });
+
+            $("#zildjian").click(function () {
+                $("#content").html("It's like russian army marchin in you ears ;)");
             });
 
             //toggle menu
@@ -99,11 +124,23 @@
             }, function () {
                 $(this).fadeTo(600, 0.6);
             });
+
+            //footer link dim
+
+            $(".footerLink").mouseover(function () {
+                $(this).animate({ backgroundColor: '#003333', opacity: 0.6, fontSize: "1.2em" }, 1000);
+            }).mouseout(function () {
+                $(this).animate({ backgroundColor: '#000', opacity: 1, fontSize: "1.1em" }, 1000);
+            });
+
             /*
             $("#menu a").hover(function () {
             $(this).fadeOut();
             });
             */
+
+            //gallery script
+            
 
         });
     </script>

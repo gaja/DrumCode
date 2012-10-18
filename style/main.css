@@ -2,6 +2,8 @@
     background-color: black;
     color: white;
     font-size: 1.1em;
+    font-family: Courier New;
+    line-height: 120%;
 }
 
 body 
@@ -20,23 +22,19 @@ header {
 
 a {
     text-decoration: none;
-    color: green;
+    color: rgba(0, 255, 0, 0.5);
     display: inline;
-}
-
-a:hover {
-    text-decoration: line-through;
-    color: greenyellow;
 }
 
 article {
     width: 800px;
     background-color: rgba(255, 0, 0, 0.03);
-    height: 65%;
+    min-height: 400px;
+    padding: 0px 15px;
 }
 
 #content {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Courier New, Arial, sans-serif;
     
 }
 
@@ -44,16 +42,23 @@ aside
 {
     z-index: 41;
     display: block;
-    width: 155px;
+    width: 12em;
     background-color: rgba(255, 0, 0, 0.3);
     top: 35%;
     clear: both;
     position: fixed;
     float: right;
     right: 25px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 15px;
     
+}
+
+aside ul {
+    list-style: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AkcCycWnLMUdwAAARpJREFUOMvFk9FtAkEMRN9E/B8dQAehg7sOIBVAKoAOIBWgVMB1AB0EKkg64DoIVDD5GQg5BcRPFEsr7dpjezzWwn+Y7Z7tEqDTChTACOi3craSdraHwASogBrYnRNtL21/2l7bntsubY9tr/xt7ylyNqXrFvgAZpKOF0xGwAHYBF8HS1gsZHsKVJKeMtcI6CbxAAzyJsmznI2kYyfBOoBZmBwCPkh6aelUAY2k48kxt72+U/0iOpUn38NpnohY3FpdWHUv/ac1TjJ7Y7vOGE1igwhWAYvgaDPoSnoOuLkAL9JxA/Qlvf5GbZz9Fndo8BgNinZglSLlDfGmtve2x9eqD1Nkb/st21nm7jTptfN0Re0ff0HS7s9+5hdCN93D9/wV7QAAAABJRU5ErkJggg==);
+    position: relative;
+    float: left;
+    left: 35px;
 }
 
 aside ul, li {
@@ -66,15 +71,17 @@ aside a {
 
 #sideMenu {
     background-color: transparent;
+    padding: 5px;
 }
 
-#menu {
+#menu 
+{
     margin: 0 auto;
     text-align: center;
+    padding:15px 0px 20px 0px;
 }
 
 footer {
-    margin: 35px 0px 15px 0px;
     padding: 15px;
     background-color: rgba(255,0,0,0.3);
     border-radius: 15px;
@@ -83,8 +90,17 @@ footer {
     text-height: auto;
 }
 
+footer a{
+    
+}
+
 
 /*slide*/
+
+.slide {
+    
+}
+
 div.wrap {
 width : 900px;
 margin : 0 auto;
@@ -190,5 +206,5 @@ header div#slide-holder div#slide-controls p#slide-nav a {
 background-image : url(/images/silde-nav.png);
 }
 div#nav ul li a {
-background : url(/images/nav.png) no-repeat;
+/*background : url(/images/nav.png) no-repeat;*/
 }
